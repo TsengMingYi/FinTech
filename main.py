@@ -29,7 +29,7 @@ def read_price_date(year: str, month: str):
 
 
 @app.get(
-    "/rating/{Sector}/{currentRatio}/{quickRatio}/{cashRatio}/{daysOfSalesOutstanding}/{netProfitMargin}/{pretaxProfitMargin}/{grossProfitMargin}/{operatingProfitMargin}/{returnOnAssets}/{returnOnCapitalEmployed}/{returnOnEquity}/{assetTurnover}/{fixedAssetTurnover}/{debtEquityRatio}/{debtRatio}/{effectiveTaxRate}/{freeCashFlowOperatingCashFlowRatio}/{freeCashFlowPerShare}/{cashPerShare}/{companyEquityMultiplier}/{ebitPerRevenue}/{enterpriseValueMultiple}/{operatingCashFlowPerShare}/{operatingCashFlowSalesRatio}/{payablesTurnover}")
+    "/LR/rating/{Sector}/{currentRatio}/{quickRatio}/{cashRatio}/{daysOfSalesOutstanding}/{netProfitMargin}/{pretaxProfitMargin}/{grossProfitMargin}/{operatingProfitMargin}/{returnOnAssets}/{returnOnCapitalEmployed}/{returnOnEquity}/{assetTurnover}/{fixedAssetTurnover}/{debtEquityRatio}/{debtRatio}/{effectiveTaxRate}/{freeCashFlowOperatingCashFlowRatio}/{freeCashFlowPerShare}/{cashPerShare}/{companyEquityMultiplier}/{ebitPerRevenue}/{enterpriseValueMultiple}/{operatingCashFlowPerShare}/{operatingCashFlowSalesRatio}/{payablesTurnover}")
 def read_price_date_LR(Sector: str, currentRatio: float, quickRatio: float, cashRatio: float,
                     daysOfSalesOutstanding: float, netProfitMargin: float, pretaxProfitMargin: float,
                     grossProfitMargin: float, operatingProfitMargin: float, returnOnAssets: float,
@@ -82,7 +82,7 @@ def read_price_date_LR(Sector: str, currentRatio: float, quickRatio: float, cash
 #
 
 @app.get(
-    "/rating/{Sector}/{currentRatio}/{quickRatio}/{cashRatio}/{daysOfSalesOutstanding}/{netProfitMargin}/{pretaxProfitMargin}/{grossProfitMargin}/{operatingProfitMargin}/{returnOnAssets}/{returnOnCapitalEmployed}/{returnOnEquity}/{assetTurnover}/{fixedAssetTurnover}/{debtEquityRatio}/{debtRatio}/{effectiveTaxRate}/{freeCashFlowOperatingCashFlowRatio}/{freeCashFlowPerShare}/{cashPerShare}/{companyEquityMultiplier}/{ebitPerRevenue}/{enterpriseValueMultiple}/{operatingCashFlowPerShare}/{operatingCashFlowSalesRatio}/{payablesTurnover}")
+    "/GBT/rating/{Sector}/{currentRatio}/{quickRatio}/{cashRatio}/{daysOfSalesOutstanding}/{netProfitMargin}/{pretaxProfitMargin}/{grossProfitMargin}/{operatingProfitMargin}/{returnOnAssets}/{returnOnCapitalEmployed}/{returnOnEquity}/{assetTurnover}/{fixedAssetTurnover}/{debtEquityRatio}/{debtRatio}/{effectiveTaxRate}/{freeCashFlowOperatingCashFlowRatio}/{freeCashFlowPerShare}/{cashPerShare}/{companyEquityMultiplier}/{ebitPerRevenue}/{enterpriseValueMultiple}/{operatingCashFlowPerShare}/{operatingCashFlowSalesRatio}/{payablesTurnover}")
 def read_price_date_GBT(Sector: str, currentRatio: float, quickRatio: float, cashRatio: float,
                     daysOfSalesOutstanding: float, netProfitMargin: float, pretaxProfitMargin: float,
                     grossProfitMargin: float, operatingProfitMargin: float, returnOnAssets: float,
@@ -132,7 +132,7 @@ def read_price_date_GBT(Sector: str, currentRatio: float, quickRatio: float, cas
     return {"Rating": Sector_name_mapping[y_pred_LR[0]]}
 
 @app.get(
-    "/rating/{Sector}/{currentRatio}/{quickRatio}/{cashRatio}/{daysOfSalesOutstanding}/{netProfitMargin}/{pretaxProfitMargin}/{grossProfitMargin}/{operatingProfitMargin}/{returnOnAssets}/{returnOnCapitalEmployed}/{returnOnEquity}/{assetTurnover}/{fixedAssetTurnover}/{debtEquityRatio}/{debtRatio}/{effectiveTaxRate}/{freeCashFlowOperatingCashFlowRatio}/{freeCashFlowPerShare}/{cashPerShare}/{companyEquityMultiplier}/{ebitPerRevenue}/{enterpriseValueMultiple}/{operatingCashFlowPerShare}/{operatingCashFlowSalesRatio}/{payablesTurnover}")
+    "/RF/rating/{Sector}/{currentRatio}/{quickRatio}/{cashRatio}/{daysOfSalesOutstanding}/{netProfitMargin}/{pretaxProfitMargin}/{grossProfitMargin}/{operatingProfitMargin}/{returnOnAssets}/{returnOnCapitalEmployed}/{returnOnEquity}/{assetTurnover}/{fixedAssetTurnover}/{debtEquityRatio}/{debtRatio}/{effectiveTaxRate}/{freeCashFlowOperatingCashFlowRatio}/{freeCashFlowPerShare}/{cashPerShare}/{companyEquityMultiplier}/{ebitPerRevenue}/{enterpriseValueMultiple}/{operatingCashFlowPerShare}/{operatingCashFlowSalesRatio}/{payablesTurnover}")
 def read_price_dateRF(Sector: str, currentRatio: float, quickRatio: float, cashRatio: float,
                     daysOfSalesOutstanding: float, netProfitMargin: float, pretaxProfitMargin: float,
                     grossProfitMargin: float, operatingProfitMargin: float, returnOnAssets: float,
