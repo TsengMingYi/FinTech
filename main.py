@@ -1,5 +1,5 @@
 from typing import Optional
-
+from sklearn.ensemble import GradientBoostingClassifier
 from fastapi import FastAPI
 import joblib
 import pickle
